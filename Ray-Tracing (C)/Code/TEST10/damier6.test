@@ -1,0 +1,27 @@
+size 1920 1080
+
+output damier6.png
+
+# sampling random 10
+
+camera 0 2 6 0 0 0 0 1 0 45
+
+shadow true
+maxdepth 5
+
+directional -1 1 1 1 1 1
+
+specular .5 .5 .5
+shininess 10
+
+checker .3 .3 .3 0 0 0 2 
+plane 0 -2 0 0 1 0
+
+diffuse .5 .5 0
+sphere 0 0 0 1
+
+diffuse 0 .5 .5
+sphere 2 -1 2 .5
+
+diffuse .5 0 .5
+sphere -1 1 -2 1

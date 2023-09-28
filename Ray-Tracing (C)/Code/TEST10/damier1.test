@@ -1,0 +1,13 @@
+size 640 480
+
+output damier1.png
+
+camera -5 0 5 0 0 0 0 1 0 45
+
+shadow true
+
+directional -1 1 1 1 1 1
+
+checker 1 1 1 0 0 0 1 
+plane 0 -3 0 0 1 0
+

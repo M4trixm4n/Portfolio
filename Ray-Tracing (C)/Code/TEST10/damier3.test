@@ -1,0 +1,17 @@
+size 640 480
+
+output damier3.png
+
+camera -5 0 5 0 0 0 0 1 0 45
+
+shadow true
+maxdepth 5
+
+directional -1 1 1 1 1 1
+
+specular .5 .5 .5
+checker .5 .5 .5 .5 0 0 .5 
+plane 0 -2 0 0 1 0
+
+diffuse .5 .5 0
+sphere 0 0 0 1

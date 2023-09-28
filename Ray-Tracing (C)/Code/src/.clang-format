@@ -1,0 +1,68 @@
+# BasedOnStyle: LLVM
+
+# Language: C
+
+AllowShortBlocksOnASingleLine: Empty
+AllowShortEnumsOnASingleLine: true
+AllowShortFunctionsOnASingleLine: None
+AllowShortIfStatementsOnASingleLine: true
+
+BreakBeforeBraces: Custom
+BraceWrapping:
+{
+	AfterClass: false,
+	AfterFunction: false,
+	AfterCaseLabel: false,
+	# BraceWrappingAfterControlStatementStyle: BWACS_Never,
+	AfterEnum: false,
+	AfterStruct: false,
+	AfterUnion: false,
+	BeforeCatch: false,
+	BeforeElse: false,
+	BeforeWhile: false,
+	IndentBraces: false,
+	SplitEmptyFunction: false,
+	SplitEmptyRecord: false,
+	# BreakArrays: false,
+	# BreakBeforeTernaryOperators: false
+}
+
+ColumnLimit: 0
+
+IncludeBlocks: Regroup
+IndentCaseLabels: true
+IndentGotoLabels: false
+IndentWidth: 4
+# InsertNewlineAtEOF: true
+MaxEmptyLinesToKeep: 3
+PointerAlignment: Right
+# ReferenceAlignment: RAS_Pointer
+# RemoveSemicolon: true
+# SeparateDefinitionBlocks: SDS_Always
+SortIncludes: true
+
+SpaceAfterCStyleCast: true
+SpaceAfterLogicalNot: false
+SpaceBeforeAssignmentOperators: true
+SpaceBeforeCaseColon: false
+
+SpaceBeforeParens: Always
+# SpaceBeforeParensOptions:
+# {
+# 	AfterControlStatements: true,
+# 	AfterFunctionDeclarationName: true,
+# 	AfterFunctionDefinitionName: true
+# }
+
+SpaceBeforeRangeBasedForLoopColon: true
+SpaceBeforeSquareBrackets: false
+SpaceInEmptyBlock: false
+SpaceInEmptyParentheses: false
+SpacesBeforeTrailingComments: 3
+SpacesInCStyleCastParentheses: false
+SpacesInConditionalStatement: false
+SpacesInContainerLiterals: false
+SpacesInParentheses: false
+SpacesInSquareBrackets: false
+TabWidth: 4
+UseTab: Never

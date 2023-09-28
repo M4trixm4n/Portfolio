@@ -1,0 +1,15 @@
+{
+    "files.associations": {
+        "*.embeddedhtml": "html",
+        "*.inc": "php",
+        "bibliotheque_mathematique.h": "c",
+        "stdio.h": "c",
+        "algebraicformulas.h": "c",
+        "comparateur_images.h": "c",
+        "ray_tracing.h": "c",
+        "triangles_plans.h": "c",
+        "images_3d.h": "c",
+        "parse_scene.h": "c"
+    },
+    "cmake.configureOnOpen": false
+}

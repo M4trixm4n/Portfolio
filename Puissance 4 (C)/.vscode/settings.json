@@ -1,0 +1,13 @@
+{
+    "files.associations": {
+        "main.h": "c",
+        "stdlib.h": "c",
+        "sdl_interface.h": "c",
+        "macros.h": "c",
+        "sdl.h": "c",
+        "stdbool.h": "c",
+        "stdio.h": "c",
+        "ia.h": "c",
+        "puissance4.h": "c"
+    }
+}

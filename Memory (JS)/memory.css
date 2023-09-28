@@ -1,0 +1,249 @@
+.ima {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: yellow;
+    height: 85px;
+    width: 85px;
+}
+
+table:first-child tr:nth-child(even) {
+    height: 100px;
+}
+
+table:first-child tr:nth-child(odd) {
+    height: 5px;
+}
+
+table:first-child td:nth-child(even) {
+    width: 100px;
+}
+
+table:first-child td:nth-child(odd) {
+    width: 5px;
+}
+
+.ima:hover {
+    height: 90px;
+    width: 90px;
+    margin-left: -2.5px;
+    margin-top: -2.5px;
+    border-color: orange;
+}
+
+.im:hover {
+    position: absolute;
+}
+
+#titre {
+    text-align: center;
+    font-variant: small-caps;
+    font-family: Arial;
+    font-size: 24pt;
+    padding-top: 0;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#gauche {
+    width: 20%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: lightgrey;
+    text-align: center;
+}
+
+
+form label input[type="radio"] {
+    display: none;
+}
+
+form label {
+    display: block;
+    cursor: pointer;
+}
+
+.mod {
+    font-size: 24pt;
+    background-color: #A9A9A9;
+    display: block;
+    border-bottom: 10px solid #696969;
+    transition: all 0.1s;
+}
+
+input {
+    display: block;
+}
+
+#modejeu {
+    font-size: 24pt;
+    font-variant: small-caps;
+    font-family: Arial;
+}
+
+#timer {
+	position: fixed;
+	left: 0;
+	width: 20%;
+	text-align: center;
+	font-size: 30pt;
+	display: block;
+}
+
+#msg {
+	position: fixed;
+	left: 0;
+	width: 20%;
+	text-align: center;
+	font-size: 20pt;
+	display: block;
+}
+
+#rejouer {
+    position: fixed;
+    left: 0;
+    width: 20%;
+}
+
+#leaderboard {
+    position: fixed;
+    right: 5%;
+    top: 10%;
+    bottom: 10%;
+    width: 20%;
+    border: 2px solid black;
+    text-align: center;
+    border-collapse: collapse;
+    font-size: 20pt;
+    height: 80%;
+}
+
+#leaderboard tr {
+
+}
+
+#leaderboard td {
+    width: 10%;
+    border: 1px solid black;
+    border-collapse: collapse;
+    height: 20px;
+}
+
+#leaderboard input {
+    display: block;
+    height: 0;
+    width: 0;
+    opacity: 0;
+}
+
+#leaderboard label {
+
+}
+
+.switch td {
+    background-color: #e3e3e3;
+    box-shadow: inset 0 0 5px black;
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+.switch label {
+    display: block;
+    cursor: pointer;
+}
+
+#tdtop {
+    font-weight: bold;
+    font-size: 28pt;
+}
+
+#haut {
+    width: 40%;
+    margin-left: 30%;
+    margin-top: 0;
+    margin-right: 30%;
+}
+
+#j1 {
+    position: fixed;
+    top: 1%;
+    margin-left: 1%;
+    font-size: 20pt;
+    vertical-align: middle;
+}
+
+#j2 {
+    position: fixed;
+    top: 1%;
+    right: 31%;
+    font-size: 20pt;
+    vertical-align: middle;
+    text-align: right;
+}
+
+#j1_a, #j1_b {
+    text-align: left;
+    visibility: hidden;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#j1_a {
+    font-weight: bold;
+}
+
+#j2_a {
+    font-weight: bold;
+}
+
+#j2_a, #j2_b {
+    text-align: right;
+    visibility: hidden;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#r1 {
+    margin-top: 15%;
+}
+
+#r2 {
+    margin-top: 6%;
+}
+
+#r3 {
+    margin-top: 6%;
+}
+
+#msg {
+    margin-top: 3%;
+}
+
+#timer {
+    margin-top: 9%;
+}
+
+#rejouer {
+    margin-top: 7%;
+}
+
+.legende {
+    font-size: 16pt;
+    background-color: lightblue;
+}
+
+.class {
+    font-size: 16pt;
+}
+
+.tds {
+    font-size: 14pt;
+}

@@ -1,0 +1,83 @@
+#---------------------------------------------------------------------- Makefile ----------------------------------------------------------------------#
+
+#________________________________________ Architectures du project
+CC ?= gcc
+SOURCES_DIR ?= sources
+OBJECTS_DIR ?= objects
+HEADERS_DIR ?= headers
+T_DIR ?= test
+DOC ?= doc
+FILES ?= 
+#________________________________________ Options pour la compilation
+CFLAGS ?= -Wall -g -MM
+LPATH = -L/home/alexisbernard/Lib/SDL-main/lib
+LLIB = -l:libSDL2.so 
+LDFLAGS = $(LPATH) $(LLIB)
+
+#________________________________________ Dépendances et récuperation des données du  project
+TARGET ?= exec
+OBJS ?= $(shell find $(SOURCES_DIR) -name "*.c" |sed 's/.c$$/.o/g' |sed 's/$(SOURCES_DIR)/$(OBJECTS_DIR)/g')
+SRC := $(wildcard $(SRC_DIR)/*.c)
+DEPS ?= $(OBJS : .o = .d) 
+
+all : manage_repository $(TARGET)
+
+T_TARGET ?= analyse
+T_OBJS ?= $(shell find $(SOURCES_DIR) -name "*.c" |sed 's/.c$$/.o/g' |sed 's/$(T_DIR)/$(OBJECTS_DIR)/g')
+T_SRC := $(wildcard $(T_DIR)/*.c)
+T_DEPS ?= $(T_OBJS : .o = .d) 
+
+
+test : manage_repository $(T_TARGET)
+
+#________________________________________ Compilation des fichiers
+$(TARGET): $(OBJS)
+	@echo "Generation de l'executable pour le programme..."
+	@echo "$(CC) -o $(TARGET) $(OBJS) $(LDFLAGS)"
+	@./$(TARGET)
+
+$(T_TARGET):$(OBJS) $(T_OBJS) 
+	@echo "Generation de l'executable pour les test..."
+	$(CC) -o $(TARGET) $(filter-out $(OBJECTS_DIR)/$(SRC_DIR)/main.o,$(OBJS)) $(T_OBJS) $(LDFLAGS)
+	@./$(T_TARGET)
+
+$(OBJECTS_DIR)$(SOURCES_DIR)/%.o : $(SOURCES_DIR)/%.c $(HEADERS)/%.h
+	@echo "Generation des .o pour le programme..."
+	$(CC) $(CFLAGS) -c $< -o $@
+
+$(OBJECTS_DIR)$(T_DIR)/%.o : $(T_SRC)/%.c $(T_DIR)/%.h
+	@echo "Generation des .o pour les tests..."
+	$(CC) $(CFLAGS) -c $< -o $@
+
+#________________________________________ Nettoyage 
+.PHONY: clean mrproper
+
+manage_repository:
+	@echo "Creation des dossiers"
+	@mkdir -p $(OBJECTS_DIR)/$(SOURCES_DIR)
+	@mkdir -p $(OBJECTS_DIR)/$(SOURCES_DIR)/Vue
+	@mkdir -p $(OBJECTS_DIR)/$(SOURCES_DIR)/Jeu
+	@mkdir -p $(OBJECTS_DIR)/$(T_DIR)
+	@mkdir -p $(OBJECTS_DIR)/$(T_DIR)/Jeu
+	@mkdir -p $(OBJECTS_DIR)/$(T_DIR)/Vue
+
+clean: 
+	@echo "Nettoyage des objects..."
+	rm -rf $(OBJECTS_DIR)
+
+mrproper:
+	@echo "Nettoyage des objects et de l'executable..."
+	rm -rf $(OBJECTS_DIR)
+	rm -f $(TARGET) $(T_TARGET)
+
+#________________________________________ Gestion du project
+doc:	
+	@echo "Compression des documentations..."
+	rm -rf $(DOC)
+	@mkdir -p $(DOC)
+
+#zip: $(FILES)
+#	@echo "Compression des fichiers..."
+#   zip -r $(FILES)
+
+-include $(DEPS) $(T_DEPS)

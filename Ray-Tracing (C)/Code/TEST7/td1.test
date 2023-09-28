@@ -1,0 +1,15 @@
+size 640 480
+output td1.png
+
+camera 0 6 6 0 0 0 0 1 0 45
+
+shadow true
+
+point 0 6 0 1 1 1
+
+ambient .1 .1 .1
+diffuse .5 0 0
+specular .4 .4 .4 
+shininess 50
+
+sphere 0 0 0 1

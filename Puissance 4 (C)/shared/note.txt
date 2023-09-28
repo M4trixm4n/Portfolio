@@ -1,0 +1,38 @@
+- 3 parties : 
+    ° Jeu ( Le jeu de base ) :
+    struct P4:
+        struct Board:
+        struct Joueur:
+            Enum ( IA PLAYER )
+    struct vueSortieStantard:
+        struct P4
+    //struct chrono
+
+    ° IA : 
+        3 IAs
+        Fonction determiner le prochain coup ( avec % / 100 )
+
+    ° SDL :
+        struct SDL_interface 
+
+
+    ° Doc / Rapport / ...
+
+    * Makefile 
+
+=========================================
+
+Alexis:
+    ° SDL_interface 
+    ° Makefile
+
+
+------------------------------
+William:
+    ° Jeu 
+        * Joueur.h/.c : struct Joueur avec score, ia (facile, normal, difficile, aucune = vrai joueur), joueur 1 ou 2, 
+        pointeur de fonction pour play() selon ia
+        * Board.h/.c : struct Board avec tab[7] de piles, a qui le tour, mode de jeu, dernier pion joué
+        * IA.h/.c : fonctions IA
+        * jouerUtilisateur.h/.c : fonctions jouerUtilisateur
+        * Puissance4.h/.c : struct Jeu avec 1 Board, 2 Joueurs

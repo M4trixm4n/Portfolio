@@ -1,0 +1,15 @@
+size 640 480
+output td2.png
+
+camera 0 6 4 0 0 0 0 1 0 45
+
+shadow true
+
+point 0 6 4 1 1 1
+
+ambient .1 .1 .1
+diffuse .3 0 0
+specular .6 .6 .6
+shininess 10
+
+sphere 0 0 0 1

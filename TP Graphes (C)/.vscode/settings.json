@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "listechaineepers.h": "c",
+        "string.h": "c",
+        "connexe.h": "c",
+        "connexeforte.h": "c",
+        "pilepersonne.h": "c",
+        "personne.h": "c"
+    },
+    "C_Cpp.intelliSenseEngineFallback": "Enabled",
+}

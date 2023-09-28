@@ -1,0 +1,17 @@
+size 640 480
+
+output democours.png
+
+camera 0 0 6 0 0 0 0 1 0 45
+
+point 4 0 0 1 1 1
+
+specular .4 .5 .6
+# diffuse .4 .5 .6
+shininess 10
+
+sphere 0 0 0 1
+
+diffuse 1 1 1
+specular 0 0 0
+plane 0 0 -3 0 0 1

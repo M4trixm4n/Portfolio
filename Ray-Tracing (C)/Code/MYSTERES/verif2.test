@@ -1,0 +1,51 @@
+size 640 480
+
+output verif2.png
+
+camera 4 2 4 0 0 0 0 1 0 45
+
+shadow true
+
+point -2 6 6 .1 .4 .1
+point 0 6 6 .2 .1 .4
+point 6 6 6 .1 .1 .1
+directional 0 -1 0 .4 .2 .2
+directional 0 1 0 .2 .2 .2
+
+maxverts 6
+vertex 0 0 0
+vertex 1 1 2 
+vertex -1 1 2 
+vertex 1 -1 2 
+vertex -1 -1 2 
+vertex 2 2 2 
+
+ambient .0 .0 .1
+shininess 20
+
+diffuse 1 0 0
+sphere 0 0 -1 1
+
+diffuse 1 .3 .3
+plane -3 0 0 1 0 0
+
+diffuse 0 .5 .5 
+specular .4 0 .4
+tri 3 1 2
+
+diffuse .3 .3 .3
+specular .3 .3 .3
+sphere 0 -1 1 .6
+
+diffuse 0 0 .8
+specular 0 0 0
+tri 4 3 2
+
+diffuse 0 1 .9 
+specular 0 0 0
+plane 0 0 -3 0 0 1
+
+diffuse 0 1 .8
+specular 0 0 0
+sphere -1 1 -1 .3
+

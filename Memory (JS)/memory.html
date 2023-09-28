@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Projet WEB : Memory</title>
+        <meta charset="utf-8">
+        <script src="memory.js"></script>
+        <link rel="stylesheet" type="text/css" href="./memory.css" />
+    </head>
+    <body>
+        <div id="haut">
+            <div id="j1">
+                <label id="j1_a"> Joueur 1 </label>
+                <br>
+                <label id="j1_b"> </label>
+            </div>
+            <h1 id="titre">Memory</h1>
+            <div id="j2">
+                <label id="j2_a"> Joueur 2 </label>
+                <br>
+                <label id="j2_b"> </label>
+            </div>
+        </div>
+        <table>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="im"><img src="img0.jpg" id=0 class="ima"/></td>
+                <td></td>
+                <td class="im"><img src="img0.jpg" id=1 class="ima"/></td>
+                <td></td>
+                <td class="im"><img src="img0.jpg" id=2 class="ima"/></td>
+                <td></td>
+                <td class="im"><img src="img0.jpg" id=3 class="ima"/></td>
+                <td></td>
+                <td class="im"><img src="img0.jpg" id=4 class="ima"/></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="im"><img src="img0.jpg" id=5 class="ima"/></td>
+                <td></td>
+                <td class="im"><img src="img0.jpg" id=6 class="ima"/></td>
+                <td></td>
+                <td class="im"><img src="img0.jpg" id=7 class="ima"/></td>
+                <td></td>
+                <td class="im"><img src="img0.jpg" id=8 class="ima"/></td>
+                <td></td>
+                <td class="im"><img src="img0.jpg" id=9 class="ima"/></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="im"><img src="img0.jpg" id=10 class="ima"/></td>
+                <td></td>
+                <td class="im"><img src="img0.jpg" id=11 class="ima"/></td>
+                <td></td>
+                <td class="im"><img src="img0.jpg" id=12 class="ima"/></td>
+                <td></td>
+                <td class="im"><img src="img0.jpg" id=13 class="ima"/></td>
+                <td></td>
+                <td class="im"><img src="img0.jpg" id=14 class="ima"/></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="im"><img src="img0.jpg" id=15 class="ima"/></td>
+                <td></td>
+                <td class="im"><img src="img0.jpg" id=16 class="ima"/></td>
+                <td></td>
+                <td class="im"><img src="img0.jpg" id=17 class="ima"/></td>
+                <td></td>
+                <td class="im"><img src="img0.jpg" id=18 class="ima"/></td>
+                <td></td>
+                <td class="im"><img src="img0.jpg" id=19 class="ima"/></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="im"><img src="img0.jpg" id=20 class="ima"/></td>
+                <td></td>
+                <td class="im"><img src="img0.jpg" id=21 class="ima"/></td>
+                <td></td>
+                <td class="im"><img src="img0.jpg" id=22 class="ima"/></td>
+                <td></td>
+                <td class="im"><img src="img0.jpg" id=23 class="ima"/></td>
+                <td></td>
+                <td class="im"><img src="img0.jpg" id=24 class="ima"/></td>
+                <td></td>
+            </tr>
+            <tr>
+            <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        <table id="leaderboard">
+            <tr>
+                <td colspan="2" id="tdtop">Hall of Fame</td>
+            </tr>
+            <tr class="switch">
+                <td id="h1"><label>Temps<input type="radio" checked="checked" name="halloffame" class="hall" id="hall1" value="yes"></label></td>
+                <td id="h2"><label>Tours<input type="radio" name="halloffame" class="hall" id="hall2" value="no"></label></td>
+            </tr>
+            <tr>
+                <td class="legende">Pseudo</td>
+                <td id="type" class="legende"> </td>
+            </tr>
+            <tr class="scores">
+                <td class="tds"> </td>
+                <td class="tds"> </td>
+            </tr>
+            <tr class="scores">
+                <td class="tds"> </td>
+                <td class="tds"> </td>
+            </tr>
+            <tr class="scores">
+                <td class="tds"> </td>
+                <td class="tds"> </td>
+            </tr>
+            <tr class="scores">
+                <td class="tds"> </td>
+                <td class="tds"> </td>
+            </tr>
+            <tr class="scores">
+                <td class="tds"> </td>
+                <td class="tds"> </td>
+            </tr>
+            <tr class="scores">
+                <td class="tds"> </td>
+                <td class="tds"> </td>
+            </tr>
+            <tr class="scores">
+                <td class="tds"> </td>
+                <td class="tds"> </td>
+            </tr>
+            <tr class="scores">
+                <td class="tds"> </td>
+                <td class="tds"> </td>
+            </tr>
+            <tr class="scores">
+                <td class="tds"> </td>
+                <td class="tds"> </td>
+            </tr>
+            <tr class="scores">
+                <td class="tds"> </td>
+                <td class="tds"> </td>
+            </tr>
+            <tr class="scores">
+                <td class="tds"> </td>
+                <td class="tds"> </td>
+            </tr>
+            <tr class="scores">
+                <td class="tds"> </td>
+                <td class="tds"> </td>
+            </tr>
+            <tr class="scores">
+                <td class="tds"> </td>
+                <td class="tds"> </td>
+            </tr>
+            <tr class="scores">
+                <td class="tds"> </td>
+                <td class="tds"> </td>
+            </tr>
+            <tr class="scores">
+                <td class="tds"> </td>
+                <td class="tds"> </td>
+            </tr>
+        </table>
+        <div id="gauche">
+            <nav>
+                <h1 id="modejeu">Modes de jeu</h1>
+                <form>
+                    <label class="mod" id="r1">Contre la montre
+                        <input type="radio" checked="checked" name="radio" class="rad" id="rad1">
+                        <span class="modes"></span>
+                    </label>
+                    <label class="mod" id="r2">Mode 2 joueurs
+                        <input type="radio" name="radio" class="rad" id="rad2">
+                        <span class="modes"></span>
+                    </label>
+                    <label class="mod" id="r3">Contre l'ordinateur
+                        <input type="radio" name="radio" class="rad" id="rad3">
+                        <span class="modes"></span>
+                    </label>
+                    <label id="msg"> </label>
+					<label id="timer"> </label>
+                    <div id="rejouer"></div>
+                </form>
+            </nav>
+        </div>
+    </body>
+</html>
